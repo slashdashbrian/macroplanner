@@ -1,0 +1,7 @@
+export {result}
+
+
+function result() { 
+    
+ 
+ }

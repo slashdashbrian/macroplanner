@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url(img/katie-smith-uQs1802D0CQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    font-family: Roboto, 'Sans-Serif';
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    box-shadow: rgba(0, 0, 0, 0.5);
+}
+
+span {
+    color: tomato;
+}
+
+.calc-form {
+    display: grid;
+    height: 500px;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 1fr 1fr;
+    place-content: center;
+    grid-gap: 10em;
+    padding: 5em;
+    margin-top: 10em;
+}
+
+p {
+    font-size: 1.4em;
+}
+
+.days-cal input,
+.macros-percentage input {
+    width: 13em;
+    height: 2em;
+    border-radius: 2em;
+    border: none;
+    text-align: center;
+    font-weight: 700;
+}
+
+.days-cal input:focus,
+.macros-percentage input:focus {
+    outline: none;
+    box-shadow: 0 0 3pt 2pt tomato;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.submit {
+
+    display: block;
+    height: 2em;
+    width: 10em;
+    border: none;
+    border-radius: 2em;
+    background: tomato;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 700;
+    transition-duration: ease-in 0.5s;
+    margin: 3em auto 2em auto;
+
+
+
+}
+.submit:hover{
+    background-color: #ff5132;
+}
+
+
+   
+ 
+
+
+.warning {
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 1em;
+    color: rgb(255, 71, 71);
+    font-weight: 700;
+    font-family: Roboto;
+    transition: ease-in .5s; 
+}
+
+
+
+
+
+.submit:focus {
+    outline: none;
+}
+
+.submit:active {
+
+    background: rgb(255, 137, 116);
+}
+
+
+@media screen and (max-width: 1080px) {
+
+    .calc-form {
+        grid-gap: unset;
+        width: 100%;
+        padding: unset;
+    }
+}
+
+
+/* RESULT */
+
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: 15em 8em 8em 8em 8em 8em 8em 8em;
+    grid-template-rows: 1fr;
+    gap: 0px 1px;
+    text-align: center;
+    grid-template-areas: " Sunday Sign Total Morning Lunch Snack Shake Dinner ";
+    padding: 2em;
+}
+
+.Sunday {
+    grid-area: Sunday;
+}
+.Sign{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:  0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    gap: 1px 1px;
+    grid-template-areas: 'total-sign' "totalcal-sign" "protein-sign" "fat-sign" "carbs-sign";
+    grid-area: Sign;
+}
+
+
+.total-sign{grid-area: total-sign;}
+.totalcal-sign{grid-area: totalcal-sign;}
+.protein-sign{grid-area: protein-sign;}
+.fat-sign{grid-area: fat-sign;}
+.carbs-sign{grid-area: carbs-sign;}
+
+.Total {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    gap: 1px 1px;
+    grid-template-areas: 'total'"totalcal""protein""fat""carbs";
+    grid-area: Total;
+}
+
+.total {
+    grid-area: total;
+}
+
+.totalcal {
+    grid-area: totalcal;
+}
+
+.protein {
+    grid-area: protein;
+}
+
+.fat {
+    grid-area: fat;
+}
+
+.carbs {
+    grid-area: carbs;
+}
+
+.Morning {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    gap: 1px 1px;
+    grid-template-areas: 'morning'"morning-cal""morning-protein"'morning-fat'"morning-carbs";
+    grid-area: Morning;
+}
+
+.morning {
+    grid-area: morning;
+}
+
+.morning-cal {
+    grid-area: morning-cal;
+}
+
+.morning-protein {
+    grid-area: morning-protein;
+}
+
+.morning-carbs {
+    grid-area: morning-carbs;
+}
+
+.morning-fat {
+    grid-area: morning-fat;
+}
+
+
+
+.Lunch {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    gap: 1px 1px;
+    grid-template-areas: "lunch""lunch-cal""lunch-protein""launch-fat""launch-carbs";
+    grid-area: Lunch;
+}
+
+.lunch {
+    grid-area: lunch;
+}
+
+.lunch-cal {
+    grid-area: lunch-cal;
+}
+
+.lunch-protein {
+    grid-area: lunch-protein;
+}
+
+.launch-fat {
+    grid-area: launch-fat;
+}
+
+.launch-carbs {
+    grid-area: launch-carbs;
+}
+
+.Snack {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    gap: 1px 1px;
+    grid-template-areas: "snack""snack-cal""snack-protein""snack-fat""snack-carbs";
+    grid-area: Snack;
+}
+
+.snack {
+    grid-area: snack;
+}
+
+.snack-cal {
+    grid-area: snack-cal;
+}
+
+.snack-protein {
+    grid-area: snack-protein;
+}
+
+.snack-fat {
+    grid-area: snack-fat;
+}
+
+.snack-carbs {
+    grid-area: snack-carbs;
+}
+
+.Shake {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    gap: 1px 1px;
+    grid-template-areas: "shake""shake-cal""shake-protein""shake-fat""shake-carbs";
+    grid-area: Shake;
+}
+
+.shake {
+    grid-area: shake;
+}
+
+.shake-cal {
+    grid-area: shake-cal;
+}
+
+.shake-protein {
+    grid-area: shake-protein;
+}
+
+.shake-fat {
+    grid-area: shake-fat;
+}
+
+.shake-carbs {
+    grid-area: shake-carbs;
+}
+
+.Dinner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    gap: 1px 1px;
+    grid-template-areas: "dinner""dinner-cal""dinner-protein""dinner-fat""dinner-carbs";
+    grid-area: Dinner;
+}
+
+.dinner {
+    grid-area: dinner;
+}
+
+.dinner-cal {
+    grid-area: dinner-cal;
+}
+
+.dinner-protein {
+    grid-area: dinner-protein;
+}
+
+.dinner-fat {
+    grid-area: dinner-fat;
+}
+
+.dinner-carbs {
+    grid-area: dinner-carbs;
+}
+
+.total,
+.morning,
+.lunch,
+.snack,
+.shake,
+.dinner,
+.total-sign {
+    font-family: Lato, 'Sans-serif';
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 1em;
+    
+}
+.total-sign{
+    visibility: hidden;
+    transition: ease-in .5s; 
+}
+
+.Sunday {
+    padding: 2em 0;
+    text-align: center;
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+
+
+.morning-cal,
+.totalcal,
+.lunch-cal,
+.snack-cal,
+.shake-cal,
+.dinner-cal,
+.totalcal-sign {
+    color: #C7C42A;
+    font-size: 1.1em;
+    font-family: Lato;
+}
+
+
+
+.morning-protein,
+.protein,
+.protein-sign, 
+.lunch-protein,
+.snack-protein,
+.shake-protein,
+.dinner-protein {
+    font-size: 1.1em;
+    font-family: Lato;
+    color: #DBDBDB;
+}
+
+.morning-fat,
+.fat-sign,
+.fat,
+.lunch-fat,
+.snack-fat,
+.shake-fat,
+.dinner-fat {
+    color: #83BA30;
+    font-size: 1.1em;
+    font-family: Lato;
+}
+
+.morning-carbs,
+.carbs,
+.carbs-sign,
+.lunch-carbs,
+.snack-carbs,
+.shake-carbs,
+.dinner-carbs {
+    color: #E67225;
+    font-size: 1.1em;
+    font-family: Lato;
+}
+.visibility {
+    display: none;
+   
+}

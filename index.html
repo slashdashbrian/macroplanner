@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Planner</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <h1>Meal<span>Planner</span></h1>
+
+    <div id="clear">
+
+        <p class="warning visibility">You must fill out all of the fields!</p>
+        <div class="calc-form">
+
+            <div class="days-cal">
+                <p>Sunday</p>
+                <input type="number" class="sunday" required>
+                <p>Monday</p>
+                <input type="number" class="monday" required>
+                <p>Tuesday</p>
+                <input type="number" class="tuesday" required>
+                <p>Wednesday</p>
+                <input type="number" class="wednesday" required>
+                <p>Thursday</p>
+                <input type="number" class="thursday" required>
+                <p>Friday</p>
+                <input type="number" class="friday" required>
+                <p>Saturday</p>
+                <input type="number" class="saturday" required>
+            </div>
+            <div class="macros-percentage">
+                <p>Protein</p>
+                <input type="number"  class="prot" required>
+                <p>Fat</p>
+                <input type="number"  class="fa" required>
+                <p>Carbs</p>
+                <input type="number" class="car" required>
+            </div>
+
+
+        </div>
+        <button type="button" class="submit">Calculate</button>
+    </div>
+
+    <!-- SUNDAY -->
+    <div class="result visibility">
+        <div class="sunday-container container">
+            <div class="Sunday">Sunday</div>
+            <div class="Sign box">
+                <div class="total-sign">Total</div>
+                <div class="totalcal-sign">Kcal: </div>
+                <div class="protein-sign">Protein:</div>
+                <div class="fat-sign">Fat:</div>
+                <div class="carbs-sign">Carbs:</div>
+            </div>
+            <div class="Total box">
+                <div class="total">Total</div>
+                <div class="totalcal">Kcal: </div>
+                <div class="protein">Protein:</div>
+                <div class="fat">Fat:</div>
+                <div class="carbs">Carbs:</div>
+            </div>
+            <div class="Morning box">
+                <div class="morning">Morning</div>
+                <div class="morning-cal">180 Kcal</div>
+                <div class="morning-protein">42g</div>
+                <div class="morning-fat">21g</div>
+                <div class="morning-carbs">2g</div>
+            </div>
+            <div class="Lunch box">
+                <div class="lunch">Lunch</div>
+                <div class="lunch-cal">184 Kcal</div>
+                <div class="lunch-protein">50g</div>
+                <div class="lunch-fat">15g</div>
+                <div class="lunch-carbs">65g</div>
+            </div>
+            <div class="Snack box">
+                <div class="snack">Snack</div>
+
+                <div class="snack-cal">154 Kcal</div>
+                <div class="snack-protein">18g</div>
+                <div class="snack-fat">20g</div>
+                <div class="snack-carbs">15g</div>
+            </div>
+            <div class="Shake box">
+                <div class="shake">Shake</div>
+
+                <div class="shake-cal">154 Kcal</div>
+                <div class="shake-protein">18g</div>
+                <div class="shake-fat">20g</div>
+                <div class="shake-carbs">15g</div>
+            </div>
+            <div class="Dinner box">
+                <div class="dinner">Dinner</div>
+
+                <div class="dinner-cal">154 Kcal</div>
+                <div class="dinner-protein">18g</div>
+                <div class="dinner-fat">20g</div>
+                <div class="dinner-carbs">15g</div>
+            </div>
+        </div>
+
+        <!-- MONDAY -->
+        <div class="monday-container container">
+            <div class="Sunday">Monday</div>
+            <div class="Sign box">
+                <div class="total-sign">Total</div>
+                <div class="totalcal-sign">Kcal: </div>
+                <div class="protein-sign">Protein:</div>
+                <div class="fat-sign">Fat:</div>
+                <div class="carbs-sign">Carbs:</div>
+            </div>
+            <div class="Total box">
+                <div class="total">Total</div>
+                <div class="totalcal">Kcal: </div>
+                <div class="protein">Protein:</div>
+                <div class="fat">Fat:</div>
+                <div class="carbs">Carbs:</div>
+            </div>
+            <div class="Morning box">
+                <div class="morning">Morning</div>
+                <div class="morning-cal">180 Kcal</div>
+                <div class="morning-protein">42g</div>
+                <div class="morning-fat">21g</div>
+                <div class="morning-carbs">2g</div>
+            </div>
+            <div class="Lunch box">
+                <div class="lunch">Lunch</div>
+                <div class="lunch-cal">184 Kcal</div>
+                <div class="lunch-protein">50g</div>
+                <div class="lunch-fat">15g</div>
+                <div class="lunch-carbs">65g</div>
+            </div>
+            <div class="Snack box">
+                <div class="snack">Snack</div>
+
+                <div class="snack-cal">154 Kcal</div>
+                <div class="snack-protein">18g</div>
+                <div class="snack-fat">20g</div>
+                <div class="snack-carbs">15g</div>
+            </div>
+            <div class="Shake box">
+                <div class="shake">Shake</div>
+
+                <div class="shake-cal">154 Kcal</div>
+                <div class="shake-protein">18g</div>
+                <div class="shake-fat">20g</div>
+                <div class="shake-carbs">15g</div>
+            </div>
+            <div class="Dinner box">
+                <div class="dinner">Dinner</div>
+
+                <div class="dinner-cal">154 Kcal</div>
+                <div class="dinner-protein">18g</div>
+                <div class="dinner-fat">20g</div>
+                <div class="dinner-carbs">15g</div>
+            </div>
+        </div>
+
+        <!-- TUESDAY -->
+        <div class="tuesday-container container">
+            <div class="Sunday">Tuesday</div>
+            <div class="Sign box">
+                <div class="total-sign">Total</div>
+                <div class="totalcal-sign">Kcal: </div>
+                <div class="protein-sign">Protein:</div>
+                <div class="fat-sign">Fat:</div>
+                <div class="carbs-sign">Carbs:</div>
+            </div>
+            <div class="Total box">
+                <div class="total">Total</div>
+                <div class="totalcal">Kcal: </div>
+                <div class="protein">Protein:</div>
+                <div class="fat">Fat:</div>
+                <div class="carbs">Carbs:</div>
+            </div>
+            <div class="Morning box">
+                <div class="morning">Morning</div>
+                <div class="morning-cal">180 Kcal</div>
+                <div class="morning-protein">42g</div>
+                <div class="morning-fat">21g</div>
+                <div class="morning-carbs">2g</div>
+            </div>
+            <div class="Lunch box">
+                <div class="lunch">Lunch</div>
+                <div class="lunch-cal">184 Kcal</div>
+                <div class="lunch-protein">50g</div>
+                <div class="lunch-fat">15g</div>
+                <div class="lunch-carbs">65g</div>
+            </div>
+            <div class="Snack box">
+                <div class="snack">Snack</div>
+
+                <div class="snack-cal">154 Kcal</div>
+                <div class="snack-protein">18g</div>
+                <div class="snack-fat">20g</div>
+                <div class="snack-carbs">15g</div>
+            </div>
+            <div class="Shake box">
+                <div class="shake">Shake</div>
+
+                <div class="shake-cal">154 Kcal</div>
+                <div class="shake-protein">18g</div>
+                <div class="shake-fat">20g</div>
+                <div class="shake-carbs">15g</div>
+            </div>
+            <div class="Dinner box">
+                <div class="dinner">Dinner</div>
+
+                <div class="dinner-cal">154 Kcal</div>
+                <div class="dinner-protein">18g</div>
+                <div class="dinner-fat">20g</div>
+                <div class="dinner-carbs">15g</div>
+            </div>
+        </div>
+
+        <!-- WEDNESDAY -->
+        <div class="wednesday-container container">
+            <div class="Sunday">Wednesday</div>
+            <div class="Sign box">
+                <div class="total-sign">Total</div>
+                <div class="totalcal-sign">Kcal: </div>
+                <div class="protein-sign">Protein:</div>
+                <div class="fat-sign">Fat:</div>
+                <div class="carbs-sign">Carbs:</div>
+            </div>
+            <div class="Total box">
+                <div class="total">Total</div>
+                <div class="totalcal">Kcal: </div>
+                <div class="protein">Protein:</div>
+                <div class="fat">Fat:</div>
+                <div class="carbs">Carbs:</div>
+            </div>
+            <div class="Morning box">
+                <div class="morning">Morning</div>
+                <div class="morning-cal">180 Kcal</div>
+                <div class="morning-protein">42g</div>
+                <div class="morning-fat">21g</div>
+                <div class="morning-carbs">2g</div>
+            </div>
+            <div class="Lunch box">
+                <div class="lunch">Lunch</div>
+                <div class="lunch-cal">184 Kcal</div>
+                <div class="lunch-protein">50g</div>
+                <div class="lunch-fat">15g</div>
+                <div class="lunch-carbs">65g</div>
+            </div>
+            <div class="Snack box">
+                <div class="snack">Snack</div>
+
+                <div class="snack-cal">154 Kcal</div>
+                <div class="snack-protein">18g</div>
+                <div class="snack-fat">20g</div>
+                <div class="snack-carbs">15g</div>
+            </div>
+            <div class="Shake box">
+                <div class="shake">Shake</div>
+
+                <div class="shake-cal">154 Kcal</div>
+                <div class="shake-protein">18g</div>
+                <div class="shake-fat">20g</div>
+                <div class="shake-carbs">15g</div>
+            </div>
+            <div class="Dinner box">
+                <div class="dinner">Dinner</div>
+
+                <div class="dinner-cal">154 Kcal</div>
+                <div class="dinner-protein">18g</div>
+                <div class="dinner-fat">20g</div>
+                <div class="dinner-carbs">15g</div>
+            </div>
+        </div>
+
+        <!--  THURSDAY -->
+        <div class="thursday-container container">
+            <div class="Sign box">
+                <div class="total-sign">Total</div>
+                <div class="totalcal-sign">Kcal: </div>
+                <div class="protein-sign">Protein:</div>
+                <div class="fat-sign">Fat:</div>
+                <div class="carbs-sign">Carbs:</div>
+            </div>
+            <div class="Sunday">Thursday</div>
+            <div class="Total box">
+                <div class="total">Total</div>
+                <div class="totalcal">Kcal: </div>
+                <div class="protein">Protein:</div>
+                <div class="fat">Fat:</div>
+                <div class="carbs">Carbs:</div>
+            </div>
+            <div class="Morning box">
+                <div class="morning">Morning</div>
+                <div class="morning-cal">180 Kcal</div>
+                <div class="morning-protein">42g</div>
+                <div class="morning-fat">21g</div>
+                <div class="morning-carbs">2g</div>
+            </div>
+            <div class="Lunch box">
+                <div class="lunch">Lunch</div>
+                <div class="lunch-cal">184 Kcal</div>
+                <div class="lunch-protein">50g</div>
+                <div class="lunch-fat">15g</div>
+                <div class="lunch-carbs">65g</div>
+            </div>
+            <div class="Snack box">
+                <div class="snack">Snack</div>
+
+                <div class="snack-cal">154 Kcal</div>
+                <div class="snack-protein">18g</div>
+                <div class="snack-fat">20g</div>
+                <div class="snack-carbs">15g</div>
+            </div>
+            <div class="Shake box">
+                <div class="shake">Shake</div>
+
+                <div class="shake-cal">154 Kcal</div>
+                <div class="shake-protein">18g</div>
+                <div class="shake-fat">20g</div>
+                <div class="shake-carbs">15g</div>
+            </div>
+            <div class="Dinner box">
+                <div class="dinner">Dinner</div>
+
+                <div class="dinner-cal">154 Kcal</div>
+                <div class="dinner-protein">18g</div>
+                <div class="dinner-fat">20g</div>
+                <div class="dinner-carbs">15g</div>
+            </div>
+        </div>
+        <!-- FRIDAY CONTAINER -->
+        <div class="friday-container container">
+            <div class="Sunday">Friday</div>
+            <div class="Sign box">
+                <div class="total-sign">Total</div>
+                <div class="totalcal-sign">Kcal: </div>
+                <div class="protein-sign">Protein:</div>
+                <div class="fat-sign">Fat:</div>
+                <div class="carbs-sign">Carbs:</div>
+            </div>
+            <div class="Total box">
+                <div class="total">Total</div>
+                <div class="totalcal">Kcal: </div>
+                <div class="protein">Protein:</div>
+                <div class="fat">Fat:</div>
+                <div class="carbs">Carbs:</div>
+            </div>
+            <div class="Morning box">
+                <div class="morning">Morning</div>
+                <div class="morning-cal">180 Kcal</div>
+                <div class="morning-protein">42g</div>
+                <div class="morning-fat">21g</div>
+                <div class="morning-carbs">2g</div>
+            </div>
+            <div class="Lunch box">
+                <div class="lunch">Lunch</div>
+                <div class="lunch-cal">184 Kcal</div>
+                <div class="lunch-protein">50g</div>
+                <div class="lunch-fat">15g</div>
+                <div class="lunch-carbs">65g</div>
+            </div>
+            <div class="Snack box">
+                <div class="snack">Snack</div>
+
+                <div class="snack-cal">154 Kcal</div>
+                <div class="snack-protein">18g</div>
+                <div class="snack-fat">20g</div>
+                <div class="snack-carbs">15g</div>
+            </div>
+            <div class="Shake box">
+                <div class="shake">Shake</div>
+
+                <div class="shake-cal">154 Kcal</div>
+                <div class="shake-protein">18g</div>
+                <div class="shake-fat">20g</div>
+                <div class="shake-carbs">15g</div>
+            </div>
+            <div class="Dinner box">
+                <div class="dinner">Dinner</div>
+
+                <div class="dinner-cal">154 Kcal</div>
+                <div class="dinner-protein">18g</div>
+                <div class="dinner-fat">20g</div>
+                <div class="dinner-carbs">15g</div>
+            </div>
+        </div>
+        <!-- SATURDAY -->
+        <div class="saturday-container container">
+            <div class="Sunday">Saturday</div>
+            <div class="Sign box">
+                <div class="total-sign">Total</div>
+                <div class="totalcal-sign">Kcal: </div>
+                <div class="protein-sign">Protein:</div>
+                <div class="fat-sign">Fat:</div>
+                <div class="carbs-sign">Carbs:</div>
+            </div>
+            <div class="Total box">
+                <div class="total">Total</div>
+                <div class="totalcal">Kcal: </div>
+                <div class="protein">Protein:</div>
+                <div class="fat">Fat:</div>
+                <div class="carbs">Carbs:</div>
+            </div>
+            <div class="Morning box">
+                <div class="morning">Morning</div>
+                <div class="morning-cal">180 Kcal</div>
+                <div class="morning-protein">42g</div>
+                <div class="morning-fat">21g</div>
+                <div class="morning-carbs">2g</div>
+            </div>
+            <div class="Lunch box">
+                <div class="lunch">Lunch</div>
+                <div class="lunch-cal">184 Kcal</div>
+                <div class="lunch-protein">50g</div>
+                <div class="lunch-fat">15g</div>
+                <div class="lunch-carbs">65g</div>
+            </div>
+            <div class="Snack box">
+                <div class="snack">Snack</div>
+
+                <div class="snack-cal">154 Kcal</div>
+                <div class="snack-protein">18g</div>
+                <div class="snack-fat">20g</div>
+                <div class="snack-carbs">15g</div>
+            </div>
+            <div class="Shake box">
+                <div class="shake">Shake</div>
+
+                <div class="shake-cal">154 Kcal</div>
+                <div class="shake-protein">18g</div>
+                <div class="shake-fat">20g</div>
+                <div class="shake-carbs">15g</div>
+            </div>
+            <div class="Dinner box">
+                <div class="dinner">Dinner</div>
+
+                <div class="dinner-cal">154 Kcal</div>
+                <div class="dinner-protein">18g</div>
+                <div class="dinner-fat">20g</div>
+                <div class="dinner-carbs">15g</div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="index.js"></script>
+    <script type="module" src="result.js"></script>
+</body>
+
+</html>
